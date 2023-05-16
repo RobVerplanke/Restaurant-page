@@ -12,11 +12,9 @@
     },
     "rules": {
         "no-console": "off",
-        "quotes": [
-            "error",
-            "single"
-        ],
+        "no-trailing-spaces": "error",
         "indent": ["error", 2],
-        "semi": ["error", "always"]
+        "semi": ["error", "always"],
+        "quotes": ["error", "single"]
     }
 }
