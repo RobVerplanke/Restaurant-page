@@ -55,10 +55,9 @@ h2{
 
     color: rgb(255, 252, 248);
 
-    border-radius: 30px;
+    border-radius: 5px;
     border-top: solid 5px rgb(253, 215, 47);
-    border-left: solid 2px rgb(253, 215, 47);
-    border-right: solid 2px rgb(253, 215, 47);
+ 
 
     background-color: rgba(0, 0, 0, 0.3);
     font-size: 1.3em;
