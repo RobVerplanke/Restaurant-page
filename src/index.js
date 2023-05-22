@@ -1,19 +1,19 @@
-// import ./scripts/header
-// import ./scripts/nav
-import { renderHeader } from './scripts/header';
-import { renderNav } from './scripts/nav';
-import { renderMainPage } from './scripts/home';
-import { renderFooter } from './scripts/footer';
-
-// import ./scripts/footer
+import renderHeader from './scripts/header';
+import renderNav from './scripts/nav';
+import renderHomePage from './scripts/home';
+import renderFooter from './scripts/footer';
 
 const contentHolder = document.querySelector('#content');
 
-// render header
+// create main content, homepage content by default
+function renderMain(mainContent) {
+  const pageMain = document.createElement('div');
+  pageMain.setAttribute('id', 'main');
+  pageMain.append(mainContent);
 
-// render nav
+  return pageMain;
+}
 
-// render main content (home, menu or contact)
-const pageMain = document.querySelector('#main');
+const selectedMainContent = renderHomePage();
 
-// render footer
+contentHolder.append(renderHeader(), renderNav(), renderMain(selectedMainContent), renderFooter());
