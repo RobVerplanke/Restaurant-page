@@ -12,7 +12,6 @@
     },
     "rules": {
         "no-console": "off",
-        "no-trailing-spaces": "error",
         "indent": ["error", 2],
         "semi": ["error", "always"],
         "quotes": ["error", "single"]
