@@ -55,9 +55,7 @@ body{
 
     color: rgb(255, 252, 248);
 
-    border-radius: 5px;
     border-top: solid 5px rgb(253, 215, 47);
- 
 
     background-color: rgba(0, 0, 0, 0.3);
     font-size: 1.3em;
@@ -68,11 +66,14 @@ body{
     align-items: center;
 }
 
+#nav-list li:hover{
+    cursor: pointer;
+}
+
 #main{
     padding: 40px;
     border-top: solid 4px rgb(253, 215, 47);
     border-bottom: solid 4px rgb(253, 215, 47);
-
 
     min-height: calc(100% - 220px);
     display: flex;
@@ -82,7 +83,9 @@ body{
 }
 
 #text-content{
-    width: 30vw;
+    overflow-y:scroll;
+    text-align: center;
+    width: 40vw;
     height: 500px;
     background-color: rgb(255, 252, 248);
     box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.5);

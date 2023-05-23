@@ -6,16 +6,28 @@ import renderContact from './scripts/contact';
 import renderMenu from './scripts/menu';
 
 const contentHolder = document.querySelector('#content');
+const pageMain = document.createElement('div');
 
-// create main content, homepage content by default
+function clearContent() {
+  pageMain.innerHTML = '';
+}
+
 function renderMain(mainContent) {
-  const pageMain = document.createElement('div');
   pageMain.setAttribute('id', 'main');
+  clearContent();
   pageMain.append(mainContent);
 
   return pageMain;
 }
 
-const selectedMainContent = renderHomePage();
+const defaultMainContent = renderHomePage();
 
-contentHolder.append(renderHeader(), renderNav(), renderMain(selectedMainContent), renderFooter());
+contentHolder.append(renderHeader(), renderNav(), renderMain(defaultMainContent), renderFooter());
+
+const navItemHome = document.querySelector('#nav-home');
+const navItemMenu = document.querySelector('#nav-menu');
+const navItemContact = document.querySelector('#nav-contact');
+
+navItemHome.addEventListener('click', () => { renderMain(renderHomePage()); });
+navItemMenu.addEventListener('click', () => { renderMain(renderMenu()); });
+navItemContact.addEventListener('click', () => { renderMain(renderContact()); });

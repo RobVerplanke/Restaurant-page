@@ -6,8 +6,13 @@ export default function renderNav() {
   const navItemHContact = document.createElement('li');
 
   navItemHome.innerHTML = 'Home';
+  navItemHome.setAttribute('id', 'nav-home');
+
   navItemMenu.innerHTML = 'Menu';
+  navItemMenu.setAttribute('id', 'nav-menu');
+
   navItemHContact.innerHTML = 'Contact';
+  navItemHContact.setAttribute('id', 'nav-contact');
 
   navList.setAttribute('id', 'nav-list');
   pageNav.setAttribute('id', 'nav');
