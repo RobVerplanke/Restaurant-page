@@ -2,6 +2,8 @@ import renderHeader from './scripts/header';
 import renderNav from './scripts/nav';
 import renderHomePage from './scripts/home';
 import renderFooter from './scripts/footer';
+import renderContact from './scripts/contact';
+import renderMenu from './scripts/menu';
 
 const contentHolder = document.querySelector('#content');
 

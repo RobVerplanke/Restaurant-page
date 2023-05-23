@@ -17,7 +17,7 @@ body{
     height: 100vh;
 }
 
-header{
+#header{
     height: 120px;
     display: flex;
     flex-direction: column;
@@ -68,7 +68,7 @@ header{
     align-items: center;
 }
 
-main{
+#main{
     padding: 40px;
     border-top: solid 4px rgb(253, 215, 47);
     border-bottom: solid 4px rgb(253, 215, 47);
@@ -91,7 +91,7 @@ main{
     font-family: 'Wix Madefor Display', sans-serif;
 }
 
-footer{
+#footer{
     height: 50px;
     display:flex;
     justify-content: center;
